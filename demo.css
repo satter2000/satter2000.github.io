@@ -1,0 +1,34 @@
+.tpk-hover-thanos{
+  position: relative;
+  width: 500px;
+  height: 300px;
+  overflow:hidden;
+}
+.tpk-hover-thanos img:nth-child(1){
+  position: absolute;
+  width: 100%;
+  height:100%;
+  left:0;
+  top:0;
+  transform-origin: left;
+  transition: 1s;
+}
+.tpk-hover-thanos:hover img:nth-child(1){
+  transition: 4s;
+  transition-delay: 1s;
+  transform: translateX(50px);
+  opacity:0;
+  filter: blur(20px);
+}
+.tpk-hover-thanos img.effect_thanos{
+  position: absolute;
+  width: 1200px;
+  height: 450px;
+  transform: translateX(500px) scaleX(0);
+  transform-origin: left;
+  max-width: unset
+}
+.tpk-hover-thanos:hover img.effect_thanos{
+  transition: 8s;
+  transform: translateX(-500px) scaleX(1);
+}
